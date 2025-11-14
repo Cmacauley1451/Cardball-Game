@@ -15,6 +15,11 @@ public class Card implements Comparable<Card> {
         this.SUIT = GENERATOR.nextInt(SUITS.length);
     }
 
+    public Card(int r, int s) {
+        RANK = r;
+        SUIT = s;
+    }
+
     public String getRank() {
 
         return RANKS[RANK];
